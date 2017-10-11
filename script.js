@@ -26,17 +26,6 @@ var churchillSpeech = {
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech];
 
 
-
-//When the page loads, use the window.prompt() command to ask for the user’s name. When the user responds, use a conditional to check that the type of the returned value is a string and that it is not equal to a blank string
-//(a blank string in JavaScript is expressed like this “”). If the user has entered a non-blank string, display this in the console: Hi [user’s name]!
-
-   // if (typeof user === "string" && user.length !== 1) {
-    //  console.log("Hi " + user + "!");
-     // }
-   // else {
-     // console.log("OK, I'll just call you User.");
-// };
-
 //Instead, let's use a WHILE loop to display the author of each speech in our array in the console. First, set up a variable outside of the loop called i and set it to zero. We’ll use this as our iterator inside the loop to keep track of which speech we’re on while we’re looping. Next, set up a while loop and with the stop comparison of the variable i being less than the length of the speechesArray.
 //Inside the WHILE loop use a console.log() statement to display the author's name for each object in the speechesArray like this:
  i = 0;
@@ -54,24 +43,35 @@ var churchillSpeech = {
 
     //[author name] was [author age] during this speech.
 
-document.getElementById('BtnDonate').addEventListener('click', function(){
-  var answer = window.prompt("Who is your favorite author: Churchill, Ghandi, Demosthenes?");
-switch (answer) {
-  case "Churchill" :
-    console.log(speechesArray[0].author + "was" + speechesArray[0].authorAge + "during this speech.")
-    break;
+    //project 6 step 3
+    //Instead let’s use a FOR loop to loop over the speechesArray and check if the user's value matches the value of the author property on each speech object in the array.
+    //If the user's input matches the author name, display something like this in the console:
+    //[author name] was [author age] during this speech.
 
-  case "Ghandi" :
-  console.log(speechesArray[1].author + "was" + speechesArray[1].authorAge + "during this speech.")
-    break;
+    document.getElementById('BtnDonate').addEventListener('click', function(){
+      var answer = window.prompt("Who is your favorite author: Churchill, Ghandi, Demosthenes?");
 
-  case "Churchill" :
-  console.log(speechesArray[2].author + "was" + speechesArray[2].authorAge + "during this speech.")
-    break;
+    }
 
-  default: console.log("Did you spell the name correctly?")
-}
-});
+    //Project 5
+//document.getElementById('BtnDonate').addEventListener('click', function(){
+  //var answer = window.prompt("Who is your favorite author: Churchill, Ghandi, Demosthenes?");
+//switch (answer) {
+  //case "Churchill" :
+    //console.log(speechesArray[0].author + "was" + speechesArray[0].authorAge + "during this speech.")
+    //break;
+
+  //case "Ghandi" :
+  //console.log(speechesArray[1].author + "was" + speechesArray[1].authorAge + "during this speech.")
+  //  break;
+
+//  case "Churchill" :
+//  console.log(speechesArray[2].author + "was" + speechesArray[2].authorAge + "during this speech.")
+//    break;
+
+//  default: console.log("Did you spell the name correctly?")
+//}
+//});
 
 //When each of the blue navigation buttons are clicked, start by displaying something like this:
   //This speech was written by [author name] in [speech year].
