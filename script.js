@@ -41,9 +41,9 @@ var churchillSpeech = {
 //Inside the WHILE loop use a console.log() statement to display the author's name for each object in the speechesArray like this:
  var i = 0;
 
- while(i === 0){
-   console.log("This speech is written by" + speechesArray.author + ".");
-   i += 1;
+ while(i < speechesArray.length){
+   console.log("This speech is written by" + speechesArray.author[i] + ".");
+   i++;
  }
 
 //This speech is written by [author name]
