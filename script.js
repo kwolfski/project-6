@@ -42,7 +42,7 @@ var churchillSpeech = {
  var i = 0;
 
  while(i === 0){
-   console.log(i + "This speech is written by" + speechesArray.length + ".");
+   console.log("This speech is written by" + speechesArray.author + ".");
    i += 1;
  }
 
