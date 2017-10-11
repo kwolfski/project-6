@@ -37,6 +37,17 @@ var churchillSpeech = {
      // console.log("OK, I'll just call you User.");
 // };
 
+//Instead, let's use a WHILE loop to display the author of each speech in our array in the console. First, set up a variable outside of the loop called i and set it to zero. We’ll use this as our iterator inside the loop to keep track of which speech we’re on while we’re looping. Next, set up a while loop and with the stop comparison of the variable i being less than the length of the speechesArray.
+//Inside the WHILE loop use a console.log() statement to display the author's name for each object in the speechesArray like this:
+ var i = 0;
+
+ while(i === 0){
+   console.log(i + "This speech is written by" + speechesArray.length + ".");
+   i += 1;
+ }
+
+//This speech is written by [author name]
+
     //You may notice that a new property of “authorAge” has been added to each of the speech objects. We are going to use the “Donate” button to ask the user which author is their favorite and then display the age of the specified author.
     //To do this, start by using another window.prompt() command to ask the user’s favorite author when the “Donate” button is clicked. Then use a SWITCH statement to check which author name they entered.
     //Display something like this after the user provides their answer:
