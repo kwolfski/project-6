@@ -21,7 +21,7 @@ var churchillSpeech = {
     userNamePrompt,
     favoriteSpeechPrompt;
 
-    //NOW USING THE PROVIDED START UP JS DOC... 
+    //NOW USING THE PROVIDED START UP JS DOC...
 
     i = 0;
 
@@ -33,12 +33,11 @@ var churchillSpeech = {
   document.getElementById('BtnDonate').addEventListener('click', function(){
     //Code in here executes when the user clicks the "Donate" button.
     favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
-          for(i = 0; i < speechesArray[i].author; i+= 1){
+          //for(i = 0; i < speechesArray.author; i += 1){
+            for(i = 0; i < speechesArray.length; i++){
             if (favoriteSpeechPrompt === speechesArray[i].author){
               console.log(speechesArray[i].author + "was" + speechesArray[i].authorAge + "during this speech.");
             }
-          //else {
-            //console.log("Did you spell the name correctly?");}
       };
 
 
