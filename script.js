@@ -52,8 +52,9 @@ var churchillSpeech = {
       answer = window.prompt("Who is your favorite author: Churchill, Ghandi, Demosthenes?");
         for(i = 0; i < speechesArray[i].author; i++){
           if (answer === speechesArray[i].author){
-          console.log(speechesArray[i].author + "was" + speechesArray[i].authorAge + "during this speech.");
-          break;}
+            break;}
+          if (answer === speechesArray[i].author)
+          console.log(speechesArray[i].author + "was" + speechesArray[i].authorAge + "during this speech.")
     };
 
 
