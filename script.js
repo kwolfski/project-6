@@ -47,11 +47,11 @@ var churchillSpeech = {
   if (speechesArray[i].year < oldestSpeech){
       oldestSpeech = speechesArray[i].year; //then//
       console.log("This is the oldest speech on the page.");}
-  };
-  
-  if {speechesArray[i].year = newestSpeech){
+      
+  else if {speechesArray[i].year = newestSpeech){
     newestSpeech = speechesArray[i].year; //then//
     console.log("This is the most recent speech on the page.");}
+  };
 };
 
 
