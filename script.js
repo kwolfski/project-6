@@ -20,6 +20,8 @@ var churchillSpeech = {
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech],
     userNamePrompt,
     favoriteSpeechPrompt;
+    newestSpeech = speechesArray[0].year,
+    oldestSpeech = speechesArray[0].year,
     i = 0;
 
 //Step 2
