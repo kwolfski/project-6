@@ -44,7 +44,8 @@ var churchillSpeech = {
 
 //Step 5
   for(i = 0; i < speechesArray.length; i++)
-  if {speechesArray[i].year > oldestSpeech}
+  if {speechesArray[i].year = oldestSpeech};
+  if {speechesArray[i].year = newestSpeech};
 
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
