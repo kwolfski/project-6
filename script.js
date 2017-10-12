@@ -42,6 +42,10 @@ var churchillSpeech = {
             };
           });
 
+//Step 5
+  for(i = 0; i < speechesArray.length; i++)
+  if {speechesArray[i].year > oldestSpeech}
+
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
