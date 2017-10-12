@@ -31,14 +31,13 @@ var churchillSpeech = {
 //Step 3
   document.getElementById('BtnDonate').addEventListener('click', function(){
     //Code in here executes when the user clicks the "Donate" button.
-    favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
+    var favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
 
-          for(i = 0; i < speechesArray.author; i+= 1){
-            if (favoriteSpeechPrompt === speechesArray[i].author)
-            {break;}
+          for(i = 0; i < speechesArray.author; i++){
+            if (favoriteSpeechPrompt === speechesArray[i].author){break;}
             {console.log(speechesArray[i].author + "was" + speechesArray[i].authorAge + "during this speech.");};
-          };
-        });
+            };
+          });
 
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
