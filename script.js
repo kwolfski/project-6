@@ -35,9 +35,10 @@ var churchillSpeech = {
     //Code in here executes when the user clicks the "Donate" button.
     var favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
 
-          for(i = 0; i < speechesArray.author; i++){
+          for(i = 0; i < speechesArray.length; i++){
             if (favoriteSpeechPrompt === speechesArray[i].author){break;}
-            {console.log(speechesArray[i].author + "was" + speechesArray[i].authorAge + "during this speech.");};
+            {console.log(speechesArray[i].author + "was" + speechesArray[i].authorAge + "during this speech.");
+              };
             };
           });
 
