@@ -20,42 +20,26 @@ var churchillSpeech = {
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech],
     userNamePrompt,
     favoriteSpeechPrompt;
-
-    //NOW USING THE PROVIDED START UP JS DOC...
-
     i = 0;
 
+//Step 2
      while(i < speechesArray.length){
        console.log("This speech is written by" + speechesArray[i].author + ".");
        i++;
      }
 
+//Step 3
   document.getElementById('BtnDonate').addEventListener('click', function(){
     //Code in here executes when the user clicks the "Donate" button.
     favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
-          //for(i = 0; i < speechesArray.author; i += 1){
-            for(i = 0; i < speechesArray.length; i++){
-            if (favoriteSpeechPrompt === speechesArray[i].author){
-              console.log(speechesArray[i].author + "was" + speechesArray[i].authorAge + "during this speech.");
-            }
-      };
 
+          for(i = 0; i < speechesArray.author; i+= 1){
+            if (favoriteSpeechPrompt === speechesArray[i].author)
+            {break;}
+            {console.log(speechesArray[i].author + "was" + speechesArray[i].authorAge + "during this speech.");};
+          };
+        });
 
-  //switch(favoriteSpeechPrompt){
-    //case 'Churchill':
-      //console.log(speechesArray[0].author + ' was ' + speechesArray[0].authorAge + ' during this speech.');
-      //break;
-    //case 'Ghandi':
-    //  console.log(speechesArray[1].author + ' was ' + speechesArray[1].authorAge + ' during this speech.');
-    //  break;
-    //case 'Demosthenes':
-    //  console.log(speechesArray[2].author + ' was ' + speechesArray[2].authorAge + ' during this speech.');
-    //  break;
-    //default:
-    //  console.log('Did you spell that name correctly?');
-    //  break;
-//  }
-//});
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
